@@ -60,7 +60,9 @@ public class VolunteeReader implements ItemReader<VolunteerDetails>, StepExecuti
 					if (row.getRowNum() == 0) {
 						continue;
 					}
-					assignValue(row, volunteerData, "unregistered");
+					if (row.getCell(0) != null) {
+						assignValue(row, volunteerData, "unregistered");
+					}
 
 				}
 			} catch (FileNotFoundException e) {
@@ -79,7 +81,10 @@ public class VolunteeReader implements ItemReader<VolunteerDetails>, StepExecuti
 					if (row.getRowNum() == 0) {
 						continue;
 					}
-					assignValue(row, volunteerData, "notattended");
+					if (row.getCell(0) != null) {
+						
+						assignValue(row, volunteerData, "notattended");
+					}
 
 				}
 			} catch (FileNotFoundException e) {

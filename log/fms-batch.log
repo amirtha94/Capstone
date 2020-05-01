@@ -1,0 +1,307 @@
+2020-05-01 16:57:46,164 INFO [main] c.f.b.FmsBatchApplication [StartupInfoLogger.java:55] Starting FmsBatchApplication on DESKTOP-1QKKEMV with PID 10408 (D:\CapstoneWorkSpace\fms-batch\target\classes started by ADMIN in D:\CapstoneWorkSpace\fms-batch)
+2020-05-01 16:57:46,167 INFO [main] c.f.b.FmsBatchApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-05-01 16:57:46,946 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-05-01 16:57:47,015 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 62ms. Found 3 MongoDB repository interfaces.
+2020-05-01 16:57:47,960 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 16:57:48,031 INFO [cluster-ClusterId{value='5eac07b3b9491e2da1eba9d7', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:1, serverValue:92}] to localhost:27017
+2020-05-01 16:57:48,035 INFO [cluster-ClusterId{value='5eac07b3b9491e2da1eba9d7', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2476101}
+2020-05-01 16:57:48,599 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 16:57:48,603 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 16:57:48,614 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.VolunteerDetails.id' is not allowed! Custom name ('volunteerId') will not be considered!
+2020-05-01 16:57:48,688 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 16:57:48,690 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 16:57:48,693 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.VolunteerDetails.id' is not allowed! Custom name ('volunteerId') will not be considered!
+2020-05-01 16:57:48,780 INFO [main] c.f.b.FmsBatchApplication [StartupInfoLogger.java:61] Started FmsBatchApplication in 2.921 seconds (JVM running for 3.795)
+2020-05-01 16:57:48,781 INFO [main] o.s.b.a.b.JobLauncherCommandLineRunner [JobLauncherCommandLineRunner.java:147] Running default command line with: [--spring.output.ansi.enabled=always]
+2020-05-01 16:57:48,782 WARN [main] o.s.b.c.c.a.DefaultBatchConfigurer [DefaultBatchConfigurer.java:98] No datasource was provided...using a Map based JobRepository
+2020-05-01 16:57:48,782 WARN [main] o.s.b.c.c.a.DefaultBatchConfigurer [DefaultBatchConfigurer.java:101] No transaction manager was provided, using a ResourcelessTransactionManager
+2020-05-01 16:57:48,795 INFO [main] o.s.b.c.l.s.SimpleJobLauncher [SimpleJobLauncher.java:209] No TaskExecutor has been set, defaulting to synchronous executor.
+2020-05-01 16:57:48,813 INFO [main] o.s.b.c.l.s.SimpleJobLauncher [SimpleJobLauncher.java:145] Job: [FlowJob: [name=fmsDataJob]] launched with the following parameters: [{run.id=1, -spring.output.ansi.enabled=always}]
+2020-05-01 16:57:48,855 INFO [main] c.f.b.j.JobListner [JobListner.java:16] <====== JOB STARTED =======>
+2020-05-01 16:57:48,861 INFO [main] o.s.b.c.j.SimpleStepHandler [SimpleStepHandler.java:146] Executing step: [firstStep]
+2020-05-01 16:57:48,865 WARN [main] c.f.b.e.EventDetailReader [EventDetailReader.java:80] File does not exists at path:: D:\Capstone\Inputs\OutReachEventInfo1.xlsx
+2020-05-01 16:57:48,873 INFO [main] c.f.b.e.EventDetailReader [EventDetailReader.java:87] Step Status::exitCode=COMPLETED;exitDescription= , Step Name:: firstStep 
+2020-05-01 16:57:48,874 INFO [main] o.s.b.c.s.AbstractStep [AbstractStep.java:272] Step: [firstStep] executed in 11ms
+2020-05-01 16:57:48,880 INFO [main] o.s.b.c.j.SimpleStepHandler [SimpleStepHandler.java:146] Executing step: [secondStep]
+2020-05-01 16:57:49,736 INFO [main] c.f.b.e.EventWriter [EventWriter.java:22] Total records to save 8
+2020-05-01 16:57:50,252 INFO [main] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:2, serverValue:93}] to localhost:27017
+2020-05-01 16:57:50,660 INFO [main] c.f.b.e.EventReader [EventReader.java:74] Step Status::exitCode=COMPLETED;exitDescription= , Step Name:: secondStep 
+2020-05-01 16:57:50,660 INFO [main] o.s.b.c.s.AbstractStep [AbstractStep.java:272] Step: [secondStep] executed in 1s779ms
+2020-05-01 16:57:50,665 INFO [main] o.s.b.c.j.SimpleStepHandler [SimpleStepHandler.java:146] Executing step: [thirdStep]
+2020-05-01 16:57:50,702 ERROR [main] o.s.b.c.s.AbstractStep [AbstractStep.java:237] Encountered an error executing step thirdStep in job fmsDataJob
+java.lang.NullPointerException: null
+	at com.fms.batch.volunteer.VolunteeReader.assignValue(VolunteeReader.java:103)
+	at com.fms.batch.volunteer.VolunteeReader.beforeStep(VolunteeReader.java:63)
+	at org.springframework.batch.core.listener.CompositeStepExecutionListener.beforeStep(CompositeStepExecutionListener.java:79)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:204)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:68)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:68)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:137)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:319)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:147)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:127)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy50.run(Unknown Source)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:192)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:166)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:153)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:148)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.fms.batch.FmsBatchApplication.main(FmsBatchApplication.java:13)
+2020-05-01 16:57:50,702 INFO [main] c.f.b.v.VolunteeReader [VolunteeReader.java:97] Step Status::exitCode=FAILED;exitDescription=java.lang.NullPointerException
+	at com.fms.batch.volunteer.VolunteeReader.assignValue(VolunteeReader.java:103)
+	at com.fms.batch.volunteer.VolunteeReader.beforeStep(VolunteeReader.java:63)
+	at org.springframework.batch.core.listener.CompositeStepExecutionListener.beforeStep(CompositeStepExecutionListener.java:79)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:204)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:68)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:68)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:137)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:319)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:147)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:127)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy50.run(Unknown Source)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:192)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:166)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:153)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:148)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.fms.batch.FmsBatchApplication.main(FmsBatchApplication.java:13)
+ , Step Name:: thirdStep 
+2020-05-01 16:57:50,703 INFO [main] o.s.b.c.s.AbstractStep [AbstractStep.java:272] Step: [thirdStep] executed in 38ms
+2020-05-01 16:57:50,704 ERROR [main] c.f.b.j.JobListner [JobListner.java:26] <====== JOB FAILED =======>
+2020-05-01 16:57:50,705 INFO [main] o.s.b.c.l.s.SimpleJobLauncher [SimpleJobLauncher.java:149] Job: [FlowJob: [name=fmsDataJob]] completed with the following parameters: [{run.id=1, -spring.output.ansi.enabled=always}] and the following status: [FAILED] in 1s852ms
+2020-05-01 16:57:50,708 INFO [SpringContextShutdownHook] o.m.d.connection [SLF4JLogger.java:71] Closed connection [connectionId{localValue:2, serverValue:93}] to localhost:27017 because the pool has been closed.
+2020-05-01 17:00:36,651 INFO [main] c.f.b.FmsBatchApplication [StartupInfoLogger.java:55] Starting FmsBatchApplication on DESKTOP-1QKKEMV with PID 6908 (D:\CapstoneWorkSpace\fms-batch\target\classes started by ADMIN in D:\CapstoneWorkSpace\fms-batch)
+2020-05-01 17:00:36,655 INFO [main] c.f.b.FmsBatchApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-05-01 17:00:36,943 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-05-01 17:00:36,986 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 40ms. Found 3 MongoDB repository interfaces.
+2020-05-01 17:00:37,228 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 17:00:37,264 INFO [cluster-ClusterId{value='5eac085dc1d03b1a1330a0f6', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:1, serverValue:108}] to localhost:27017
+2020-05-01 17:00:37,268 INFO [cluster-ClusterId{value='5eac085dc1d03b1a1330a0f6', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2064999}
+2020-05-01 17:00:37,495 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 17:00:37,499 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 17:00:37,519 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.VolunteerDetails.id' is not allowed! Custom name ('volunteerId') will not be considered!
+2020-05-01 17:00:37,574 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 17:00:37,576 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 17:00:37,578 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.VolunteerDetails.id' is not allowed! Custom name ('volunteerId') will not be considered!
+2020-05-01 17:00:37,635 INFO [main] c.f.b.FmsBatchApplication [StartupInfoLogger.java:61] Started FmsBatchApplication in 1.238 seconds (JVM running for 2.239)
+2020-05-01 17:00:37,636 INFO [main] o.s.b.a.b.JobLauncherCommandLineRunner [JobLauncherCommandLineRunner.java:147] Running default command line with: [--spring.output.ansi.enabled=always]
+2020-05-01 17:00:37,637 WARN [main] o.s.b.c.c.a.DefaultBatchConfigurer [DefaultBatchConfigurer.java:98] No datasource was provided...using a Map based JobRepository
+2020-05-01 17:00:37,637 WARN [main] o.s.b.c.c.a.DefaultBatchConfigurer [DefaultBatchConfigurer.java:101] No transaction manager was provided, using a ResourcelessTransactionManager
+2020-05-01 17:00:37,646 INFO [main] o.s.b.c.l.s.SimpleJobLauncher [SimpleJobLauncher.java:209] No TaskExecutor has been set, defaulting to synchronous executor.
+2020-05-01 17:00:37,671 INFO [main] o.s.b.c.l.s.SimpleJobLauncher [SimpleJobLauncher.java:145] Job: [FlowJob: [name=fmsDataJob]] launched with the following parameters: [{run.id=1, -spring.output.ansi.enabled=always}]
+2020-05-01 17:00:37,692 INFO [main] c.f.b.j.JobListner [JobListner.java:16] <====== JOB STARTED =======>
+2020-05-01 17:00:37,701 INFO [main] o.s.b.c.j.SimpleStepHandler [SimpleStepHandler.java:146] Executing step: [firstStep]
+2020-05-01 17:00:37,772 ERROR [main] o.s.b.c.s.AbstractStep [AbstractStep.java:237] Encountered an error executing step firstStep in job fmsDataJob
+org.apache.poi.hssf.OldExcelFormatException: The supplied spreadsheet seems to be Excel 5.0/7.0 (BIFF5) format. POI only supports BIFF8 format (from Excel versions 97/2000/XP/2003)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.getWorkbookDirEntryName(HSSFWorkbook.java:276)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbookFactory.createWorkbook(HSSFWorkbookFactory.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.createWorkbook(WorkbookFactory.java:339)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.createHSSFWorkbook(WorkbookFactory.java:310)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:146)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:92)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:230)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:198)
+	at com.fms.batch.eventdetail.EventDetailReader.beforeStep(EventDetailReader.java:59)
+	at org.springframework.batch.core.listener.CompositeStepExecutionListener.beforeStep(CompositeStepExecutionListener.java:79)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:204)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:68)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:68)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:137)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:319)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:147)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:127)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy50.run(Unknown Source)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:192)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:166)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:153)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:148)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.fms.batch.FmsBatchApplication.main(FmsBatchApplication.java:13)
+2020-05-01 17:00:37,773 INFO [main] c.f.b.e.EventDetailReader [EventDetailReader.java:87] Step Status::exitCode=FAILED;exitDescription=org.apache.poi.hssf.OldExcelFormatException: The supplied spreadsheet seems to be Excel 5.0/7.0 (BIFF5) format. POI only supports BIFF8 format (from Excel versions 97/2000/XP/2003)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.getWorkbookDirEntryName(HSSFWorkbook.java:276)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbookFactory.createWorkbook(HSSFWorkbookFactory.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.createWorkbook(WorkbookFactory.java:339)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.createHSSFWorkbook(WorkbookFactory.java:310)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:146)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:92)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:230)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:198)
+	at com.fms.batch.eventdetail.EventDetailReader.beforeStep(EventDetailReader.java:59)
+	at org.springframework.batch.core.listener.CompositeStepExecutionListener.beforeStep(CompositeStepExecutionListener.java:79)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:204)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:68)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:68)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:137)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:319)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:147)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:127)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy50.run(Unknown Source)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:192)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:166)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:153)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:148)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.fms.batch.FmsBatchApplication.main(FmsBatchApplication.java:13)
+ , Step Name:: firstStep 
+2020-05-01 17:00:37,777 INFO [main] o.s.b.c.s.AbstractStep [AbstractStep.java:272] Step: [firstStep] executed in 75ms
+2020-05-01 17:00:37,779 ERROR [main] c.f.b.j.JobListner [JobListner.java:26] <====== JOB FAILED =======>
+2020-05-01 17:00:37,782 INFO [main] o.s.b.c.l.s.SimpleJobLauncher [SimpleJobLauncher.java:149] Job: [FlowJob: [name=fmsDataJob]] completed with the following parameters: [{run.id=1, -spring.output.ansi.enabled=always}] and the following status: [FAILED] in 91ms
+2020-05-01 17:10:43,337 INFO [main] c.f.b.FmsBatchApplication [StartupInfoLogger.java:55] Starting FmsBatchApplication on DESKTOP-1QKKEMV with PID 428 (D:\CapstoneWorkSpace\fms-batch\target\classes started by ADMIN in D:\CapstoneWorkSpace\fms-batch)
+2020-05-01 17:10:43,340 INFO [main] c.f.b.FmsBatchApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-05-01 17:10:43,630 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-05-01 17:10:43,674 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 41ms. Found 3 MongoDB repository interfaces.
+2020-05-01 17:10:43,923 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 17:10:43,959 INFO [cluster-ClusterId{value='5eac0abb45de8356d947b867', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:1, serverValue:128}] to localhost:27017
+2020-05-01 17:10:43,963 INFO [cluster-ClusterId{value='5eac0abb45de8356d947b867', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2214700}
+2020-05-01 17:10:44,207 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 17:10:44,212 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 17:10:44,230 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.VolunteerDetails.id' is not allowed! Custom name ('volunteerId') will not be considered!
+2020-05-01 17:10:44,286 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.VolunteerDetails.id' is not allowed! Custom name ('volunteerId') will not be considered!
+2020-05-01 17:10:44,291 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 17:10:44,293 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 17:10:44,348 INFO [main] c.f.b.FmsBatchApplication [StartupInfoLogger.java:61] Started FmsBatchApplication in 1.214 seconds (JVM running for 1.816)
+2020-05-01 17:10:44,348 INFO [main] o.s.b.a.b.JobLauncherCommandLineRunner [JobLauncherCommandLineRunner.java:147] Running default command line with: [--spring.output.ansi.enabled=always]
+2020-05-01 17:10:44,350 WARN [main] o.s.b.c.c.a.DefaultBatchConfigurer [DefaultBatchConfigurer.java:98] No datasource was provided...using a Map based JobRepository
+2020-05-01 17:10:44,350 WARN [main] o.s.b.c.c.a.DefaultBatchConfigurer [DefaultBatchConfigurer.java:101] No transaction manager was provided, using a ResourcelessTransactionManager
+2020-05-01 17:10:44,360 INFO [main] o.s.b.c.l.s.SimpleJobLauncher [SimpleJobLauncher.java:209] No TaskExecutor has been set, defaulting to synchronous executor.
+2020-05-01 17:10:44,383 INFO [main] o.s.b.c.l.s.SimpleJobLauncher [SimpleJobLauncher.java:145] Job: [FlowJob: [name=fmsDataJob]] launched with the following parameters: [{run.id=1, -spring.output.ansi.enabled=always}]
+2020-05-01 17:10:44,405 INFO [main] c.f.b.j.JobListner [JobListner.java:16] <====== JOB STARTED =======>
+2020-05-01 17:10:44,414 INFO [main] o.s.b.c.j.SimpleStepHandler [SimpleStepHandler.java:146] Executing step: [firstStep]
+2020-05-01 17:10:44,780 INFO [main] c.f.b.e.EventDetailWriter [EventDetailWriter.java:25] Inside Item Writer. Total Size is 20
+2020-05-01 17:10:45,176 INFO [main] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:2, serverValue:129}] to localhost:27017
+2020-05-01 17:10:45,332 INFO [main] c.f.b.e.EventDetailWriter [EventDetailWriter.java:28] <=====Data Saved Successfully!=====>
+2020-05-01 17:10:45,335 INFO [main] c.f.b.e.EventDetailWriter [EventDetailWriter.java:25] Inside Item Writer. Total Size is 20
+2020-05-01 17:10:45,342 INFO [main] c.f.b.e.EventDetailWriter [EventDetailWriter.java:28] <=====Data Saved Successfully!=====>
+2020-05-01 17:10:45,345 INFO [main] c.f.b.e.EventDetailWriter [EventDetailWriter.java:25] Inside Item Writer. Total Size is 16
+2020-05-01 17:10:45,349 INFO [main] c.f.b.e.EventDetailWriter [EventDetailWriter.java:28] <=====Data Saved Successfully!=====>
+2020-05-01 17:10:45,352 INFO [main] c.f.b.e.EventDetailReader [EventDetailReader.java:87] Step Status::exitCode=COMPLETED;exitDescription= , Step Name:: firstStep 
+2020-05-01 17:10:45,353 INFO [main] o.s.b.c.s.AbstractStep [AbstractStep.java:272] Step: [firstStep] executed in 939ms
+2020-05-01 17:10:45,361 INFO [main] o.s.b.c.j.SimpleStepHandler [SimpleStepHandler.java:146] Executing step: [secondStep]
+2020-05-01 17:10:45,378 INFO [main] c.f.b.e.EventWriter [EventWriter.java:22] Total records to save 8
+2020-05-01 17:10:45,423 INFO [main] c.f.b.e.EventReader [EventReader.java:74] Step Status::exitCode=COMPLETED;exitDescription= , Step Name:: secondStep 
+2020-05-01 17:10:45,424 INFO [main] o.s.b.c.s.AbstractStep [AbstractStep.java:272] Step: [secondStep] executed in 63ms
+2020-05-01 17:10:45,428 INFO [main] o.s.b.c.j.SimpleStepHandler [SimpleStepHandler.java:146] Executing step: [thirdStep]
+2020-05-01 17:32:18,208 INFO [main] c.f.b.FmsBatchApplication [StartupInfoLogger.java:55] Starting FmsBatchApplication on DESKTOP-1QKKEMV with PID 11772 (D:\CapstoneWorkSpace\fms-batch\target\classes started by ADMIN in D:\CapstoneWorkSpace\fms-batch)
+2020-05-01 17:32:18,210 INFO [main] c.f.b.FmsBatchApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-05-01 17:32:18,460 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-05-01 17:32:18,496 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 34ms. Found 3 MongoDB repository interfaces.
+2020-05-01 17:32:18,699 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 17:32:18,728 INFO [cluster-ClusterId{value='5eac0fca83266c033045a7ae', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:1, serverValue:184}] to localhost:27017
+2020-05-01 17:32:18,730 INFO [cluster-ClusterId{value='5eac0fca83266c033045a7ae', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1757400}
+2020-05-01 17:32:18,920 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 17:32:18,924 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 17:32:18,936 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.VolunteerDetails.id' is not allowed! Custom name ('volunteerId') will not be considered!
+2020-05-01 17:32:18,983 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.pocDetails.pocId' is not allowed! Custom name ('pocId') will not be considered!
+2020-05-01 17:32:18,984 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.Events.eventId' is not allowed! Custom name ('eventId') will not be considered!
+2020-05-01 17:32:18,989 WARN [main] o.s.d.m.c.m.BasicMongoPersistentProperty [BasicMongoPersistentProperty.java:86] Customizing field name for id property 'com.fms.batch.model.VolunteerDetails.id' is not allowed! Custom name ('volunteerId') will not be considered!
+2020-05-01 17:32:19,035 INFO [main] c.f.b.FmsBatchApplication [StartupInfoLogger.java:61] Started FmsBatchApplication in 0.992 seconds (JVM running for 1.537)
+2020-05-01 17:32:19,036 INFO [main] o.s.b.a.b.JobLauncherCommandLineRunner [JobLauncherCommandLineRunner.java:147] Running default command line with: [--spring.output.ansi.enabled=always]
+2020-05-01 17:32:19,037 WARN [main] o.s.b.c.c.a.DefaultBatchConfigurer [DefaultBatchConfigurer.java:98] No datasource was provided...using a Map based JobRepository
+2020-05-01 17:32:19,037 WARN [main] o.s.b.c.c.a.DefaultBatchConfigurer [DefaultBatchConfigurer.java:101] No transaction manager was provided, using a ResourcelessTransactionManager
+2020-05-01 17:32:19,044 INFO [main] o.s.b.c.l.s.SimpleJobLauncher [SimpleJobLauncher.java:209] No TaskExecutor has been set, defaulting to synchronous executor.
+2020-05-01 17:32:19,062 INFO [main] o.s.b.c.l.s.SimpleJobLauncher [SimpleJobLauncher.java:145] Job: [FlowJob: [name=fmsDataJob]] launched with the following parameters: [{run.id=1, -spring.output.ansi.enabled=always}]
+2020-05-01 17:32:19,089 INFO [main] c.f.b.j.JobListner [JobListner.java:16] <====== JOB STARTED =======>
+2020-05-01 17:32:19,097 INFO [main] o.s.b.c.j.SimpleStepHandler [SimpleStepHandler.java:146] Executing step: [firstStep]
+2020-05-01 17:32:19,373 INFO [main] c.f.b.e.EventDetailWriter [EventDetailWriter.java:25] Inside Item Writer. Total Size is 20
+2020-05-01 17:32:19,751 INFO [main] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:2, serverValue:185}] to localhost:27017
+2020-05-01 17:32:19,902 INFO [main] c.f.b.e.EventDetailWriter [EventDetailWriter.java:28] <=====Data Saved Successfully!=====>
+2020-05-01 17:32:19,905 INFO [main] c.f.b.e.EventDetailWriter [EventDetailWriter.java:25] Inside Item Writer. Total Size is 20
+2020-05-01 17:32:19,911 INFO [main] c.f.b.e.EventDetailWriter [EventDetailWriter.java:28] <=====Data Saved Successfully!=====>
+2020-05-01 17:32:19,914 INFO [main] c.f.b.e.EventDetailWriter [EventDetailWriter.java:25] Inside Item Writer. Total Size is 16
+2020-05-01 17:32:19,918 INFO [main] c.f.b.e.EventDetailWriter [EventDetailWriter.java:28] <=====Data Saved Successfully!=====>
+2020-05-01 17:32:19,920 INFO [main] c.f.b.e.EventDetailReader [EventDetailReader.java:89] Step Status::exitCode=COMPLETED;exitDescription= , Step Name:: firstStep 
+2020-05-01 17:32:19,921 INFO [main] o.s.b.c.s.AbstractStep [AbstractStep.java:272] Step: [firstStep] executed in 824ms
+2020-05-01 17:32:19,927 INFO [main] o.s.b.c.j.SimpleStepHandler [SimpleStepHandler.java:146] Executing step: [secondStep]
+2020-05-01 17:32:19,942 INFO [main] c.f.b.e.EventWriter [EventWriter.java:22] Total records to save 8
+2020-05-01 17:32:20,083 INFO [main] c.f.b.e.EventReader [EventReader.java:76] Step Status::exitCode=COMPLETED;exitDescription= , Step Name:: secondStep 
+2020-05-01 17:32:20,084 INFO [main] o.s.b.c.s.AbstractStep [AbstractStep.java:272] Step: [secondStep] executed in 155ms
+2020-05-01 17:32:20,088 INFO [main] o.s.b.c.j.SimpleStepHandler [SimpleStepHandler.java:146] Executing step: [thirdStep]
+2020-05-01 17:32:20,109 INFO [main] c.f.b.v.VolunteeWriter [VolunteeWriter.java:25] Inside Item Writer. Total Size is 4
+2020-05-01 17:32:20,219 INFO [main] c.f.b.v.VolunteeWriter [VolunteeWriter.java:28] <=====Data Saved Successfully!=====>
+2020-05-01 17:32:20,221 INFO [main] c.f.b.v.VolunteeReader [VolunteeReader.java:102] Step Status::exitCode=COMPLETED;exitDescription= , Step Name:: thirdStep 
+2020-05-01 17:32:20,222 INFO [main] o.s.b.c.s.AbstractStep [AbstractStep.java:272] Step: [thirdStep] executed in 134ms
+2020-05-01 17:32:20,224 INFO [main] c.f.b.j.JobListner [JobListner.java:23] <====== JOB COMPLETED =======>
+2020-05-01 17:32:20,225 INFO [main] o.s.b.c.l.s.SimpleJobLauncher [SimpleJobLauncher.java:149] Job: [FlowJob: [name=fmsDataJob]] completed with the following parameters: [{run.id=1, -spring.output.ansi.enabled=always}] and the following status: [COMPLETED] in 1s139ms
+2020-05-01 17:32:20,228 INFO [SpringContextShutdownHook] o.m.d.connection [SLF4JLogger.java:71] Closed connection [connectionId{localValue:2, serverValue:185}] to localhost:27017 because the pool has been closed.

@@ -66,7 +66,9 @@ public class EventDetailReader implements ItemReader<EventDetail>, StepExecution
 					if (row.getRowNum() == 0) {
 						continue;
 					}
+					if (row.getCell(0) != null) {
 					assignValue(row, eventList);
+					}
 
 				}
 			} catch (FileNotFoundException e) {
